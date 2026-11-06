@@ -178,7 +178,7 @@ GOOGLE_CLIENT_ID=your_google_cloud_oauth_client_id_here
 ### 🔹 Frontend Environment Configuration (`myfrontend/.env`)
 Create a file named `.env` in the `myfrontend/` folder:
 ```env
-VITE_API_URL=http://127.0.0.1:8000/api
+VITE_BACKEND_URL=http://localhost:8000
 VITE_GOOGLE_CLIENT_ID=your_google_cloud_oauth_client_id_here
 ```
 
@@ -344,11 +344,9 @@ Vercel hosts the static assets and handles React routes on page refreshes.
    - **Root Directory:** Click "Edit" and set this to `myfrontend`.
 4. Open the **Environment Variables** section and add:
    - `VITE_BACKEND_URL`: `https://your-backend-app.onrender.com`
-   - `VITE_API_BASE_URL`: `https://your-backend-app.onrender.com`
    - `VITE_GOOGLE_CLIENT_ID`: *[Your Google OAuth Client ID]*
 5. Click **Deploy**. Vercel will build the frontend and serve it securely. (Note: The `myfrontend/vercel.json` rewrite rule is automatically loaded to prevent 404s on subpages like `/dashboard`).
 
 ---
 
 *Developed by the NutriAI Team — March 2026.*
-
